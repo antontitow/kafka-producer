@@ -1,4 +1,4 @@
-package ventus.aura.kafkastreams;
+package ventus.aura.kafka;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.kafka.annotation.EnableKafka;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.messaging.handler.annotation.Payload;
-import ventus.aura.kafkastreams.config.KafkaConfig;
+import ventus.aura.kafka.config.KafkaConfig;
 
 @SpringBootApplication
 @EnableKafka

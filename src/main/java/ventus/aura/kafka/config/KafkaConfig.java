@@ -1,4 +1,4 @@
-package ventus.aura.kafkastreams.config;
+package ventus.aura.kafka.config;
 
 import lombok.Getter;
 import lombok.Setter;

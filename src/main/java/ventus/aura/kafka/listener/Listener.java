@@ -1,8 +1,4 @@
-package ventus.aura.kafkastreams.listener;
-
-import org.springframework.kafka.annotation.EnableKafka;
-import org.springframework.kafka.annotation.KafkaListener;
-import org.springframework.stereotype.Component;
+package ventus.aura.kafka.listener;
 
 /**
  * @autor : antontitow {@literal antontitow@bk.ru}

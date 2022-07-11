@@ -1,4 +1,4 @@
-package ventus.aura.kafkastreams.dto;
+package ventus.aura.kafka.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

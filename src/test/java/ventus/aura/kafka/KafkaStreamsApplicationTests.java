@@ -1,4 +1,4 @@
-package ventus.aura.kafkastreams;
+package ventus.aura.kafka;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

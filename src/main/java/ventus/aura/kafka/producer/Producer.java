@@ -1,12 +1,12 @@
-package ventus.aura.kafkastreams.producer;
+package ventus.aura.kafka.producer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.web.bind.annotation.*;
-import ventus.aura.kafkastreams.config.KafkaConfig;
-import ventus.aura.kafkastreams.dto.DtoRq;
+import ventus.aura.kafka.config.KafkaConfig;
+import ventus.aura.kafka.dto.DtoRq;
 
 /**
  * @autor : {@literal }
