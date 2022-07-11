@@ -27,7 +27,7 @@ public class Producer {
 
   @PostMapping("/kafka")
   public void sendOrder(@RequestBody DtoRq dtoRq) {
-    System.out.println("Send data to topic" + kafkaConfig.getName());
+    System.out.println("Send data to topic " + kafkaConfig.getName());
     kafkaTemplate.send(kafkaConfig.getName(), dtoRq.getMsg());
   }
 }

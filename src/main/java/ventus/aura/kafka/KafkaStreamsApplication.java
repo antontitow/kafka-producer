@@ -9,7 +9,6 @@ import org.springframework.messaging.handler.annotation.Payload;
 import ventus.aura.kafka.config.KafkaConfig;
 
 @SpringBootApplication
-@EnableKafka
 public class KafkaStreamsApplication {
   private final KafkaConfig kafkaConfig;
 
