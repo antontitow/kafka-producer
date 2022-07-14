@@ -1,33 +1,30 @@
 package ventus.aura.kafka.producer;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
-import org.springframework.web.bind.annotation.*;
-import ventus.aura.kafka.config.KafkaConfig;
-import ventus.aura.kafka.dto.DtoRq;
+import org.springframework.stereotype.Service;
+import ventus.aura.kafka.config.TopicConfig;
+import ventus.aura.kafka.model.Task;
 
 /**
  * @autor : {@literal }
  * @created : 11.07.2022, 2:39
  */
-@RestController
-@RequestMapping("/msg")
+@Service
+@Slf4j
 public class Producer {
-  private static final Logger logger = LoggerFactory.getLogger(Producer.class);
-  private final KafkaTemplate<String, String> kafkaTemplate;
-  private final KafkaConfig kafkaConfig;
+  private final KafkaTemplate<String, Task> kafkaTemplate;
+  private final TopicConfig topicConfig;
 
   @Autowired
-  public Producer(KafkaTemplate<String, String> kafkaTemplate, KafkaConfig kafkaConfig) {
+  public Producer(KafkaTemplate<String, Task> kafkaTemplate, TopicConfig topicConfig) {
     this.kafkaTemplate = kafkaTemplate;
-    this.kafkaConfig = kafkaConfig;
+    this.topicConfig = topicConfig;
   }
 
-  @PostMapping("/kafka")
-  public void sendOrder(@RequestBody DtoRq dtoRq) {
-    System.out.println("Send data to topic " + kafkaConfig.getName());
-    kafkaTemplate.send(kafkaConfig.getName(), dtoRq.getMsg());
+  public void sendTask(Task task) {
+    log.info("Send task to topic \"" + topicConfig.getName() + "\";");
+    this.kafkaTemplate.send(topicConfig.getName(), task);
   }
 }

@@ -10,13 +10,13 @@ import org.springframework.kafka.config.TopicBuilder;
 
 /**
  * @autor : antontitow {@literal antontitow@bk.ru}
- * @created : 12.07.2022, 1:15
+ * @created : 14.07.2022, 20:26
  */
 @Configuration
 @ConfigurationProperties(prefix = "ventus.kafka.topic")
 @Getter
 @Setter
-public class KafkaConfig {
+public class TopicConfig {
   private String name;
   private int partition;
   private int replicas;

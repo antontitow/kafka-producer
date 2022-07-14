@@ -1,8 +1,11 @@
-package ventus.aura.kafka.dto;
+package ventus.aura.kafka.model.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.lang.NonNull;
+
+import java.util.Date;
 
 /**
  * @autor : antontitow {@literal antontitow@bk.ru}
@@ -11,7 +14,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class DtoRq {
-  private String msgId;
-  private String msg;
+public class TaskDto {
+  @NonNull private String title;
+  @NonNull private String executor;
+  private Date date;
 }
