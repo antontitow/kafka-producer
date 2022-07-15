@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 import ventus.aura.kafka.config.TopicConfig;
-import ventus.aura.kafka.model.Task;
+import ventus.aura.kafkastarter.Task;
 
 /**
  * @autor : {@literal }

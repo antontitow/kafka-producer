@@ -1,8 +1,8 @@
 package ventus.aura.kafka.mapper;
 
 import org.springframework.stereotype.Component;
-import ventus.aura.kafka.model.Task;
-import ventus.aura.kafka.model.dto.TaskDto;
+import ventus.aura.kafkastarter.Task;
+import ventus.aura.kafkastarter.dto.TaskDto;
 
 /**
  * @autor : antontitow {@literal antontitow@bk.ru}

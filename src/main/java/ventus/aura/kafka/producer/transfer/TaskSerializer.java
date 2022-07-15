@@ -1,9 +1,9 @@
-package ventus.aura.kafka.model.transfer;
+package ventus.aura.kafka.producer.transfer;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.kafka.common.errors.SerializationException;
 import org.apache.kafka.common.serialization.Serializer;
-import ventus.aura.kafka.model.Task;
+import ventus.aura.kafkastarter.Task;
 
 import java.util.Map;
 

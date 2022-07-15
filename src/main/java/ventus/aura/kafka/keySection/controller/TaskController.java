@@ -1,13 +1,13 @@
-package ventus.aura.kafka.controller;
+package ventus.aura.kafka.keySection.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import ventus.aura.kafka.model.dto.TaskDto;
 import ventus.aura.kafka.mapper.TaskMapperImpl;
 import ventus.aura.kafka.producer.Producer;
+import ventus.aura.kafkastarter.dto.TaskDto;
 
 /**
  * @autor : antontitow {@literal antontitow@bk.ru}
@@ -25,7 +25,7 @@ public class TaskController {
     this.taskMapper = taskMapper;
   }
 
-  @PostMapping("/check")
+  @PostMapping("/to_check")
   public void sendTask(@RequestBody TaskDto taskDto) {
     producer.sendTask(taskMapper.toTask(taskDto));
   }

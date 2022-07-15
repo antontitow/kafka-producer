@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class KafkaStreamsApplication {
+public class KafkaProducerApplication {
 
   public static void main(String[] args) {
-    SpringApplication.run(KafkaStreamsApplication.class, args);
+    SpringApplication.run(KafkaProducerApplication.class, args);
   }
 }
