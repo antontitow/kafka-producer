@@ -1,4 +1,4 @@
-package ventus.aura.kafka.keySection.controller;
+package ventus.aura.kafka.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;

@@ -1,6 +1,7 @@
 package ventus.aura.kafka.mapper;
 
 import org.springframework.stereotype.Component;
+import ventus.aura.kafka.keySection.TaskKey;
 import ventus.aura.kafkastarter.Task;
 import ventus.aura.kafkastarter.dto.TaskDto;
 
@@ -12,4 +13,6 @@ import ventus.aura.kafkastarter.dto.TaskDto;
 public interface TaskMapper {
 
   Task toTask(TaskDto taskDto);
+
+  TaskKey toTaskKey(Task task);
 }

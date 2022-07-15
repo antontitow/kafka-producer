@@ -14,11 +14,11 @@ import ventus.aura.kafkastarter.Task;
 @Service
 @Slf4j
 public class Producer {
-  private final KafkaTemplate<String, Task> kafkaTemplate;
+  private final KafkaTemplate<Task, Task> kafkaTemplate;
   private final TopicConfig topicConfig;
 
   @Autowired
-  public Producer(KafkaTemplate<String, Task> kafkaTemplate, TopicConfig topicConfig) {
+  public Producer(KafkaTemplate<Task, Task> kafkaTemplate, TopicConfig topicConfig) {
     this.kafkaTemplate = kafkaTemplate;
     this.topicConfig = topicConfig;
   }

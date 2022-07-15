@@ -1,4 +1,4 @@
-package ventus.aura.kafka.keySection.controller;
+package ventus.aura.kafka.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
