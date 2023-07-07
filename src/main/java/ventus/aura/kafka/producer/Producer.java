@@ -24,6 +24,7 @@ public class Producer {
   }
 
   public void sendTask(Task task) {
+    new Arr
     log.info("Send task to topic \"" + topicConfig.getName() + "\";");
     this.kafkaTemplate.send(topicConfig.getName(), task);
   }

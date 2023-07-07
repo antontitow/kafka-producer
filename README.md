@@ -1,6 +1,7 @@
 # ventus.aura
 https://habr.com/ru/post/496182/
 
+C:\Kafka\bin\windows
 1. start zookeeper-server-start.bat c:\kafka\config\zookeeper.properties 
 2. start kafka-server-start.bat c:\kafka\config\server.properties 
 (В случае ошибок zookeeper-server-stop.bat и kafka-server-stop.bat)
